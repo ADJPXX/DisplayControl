@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisplayControl", "DisplayControl\DisplayControl.csproj", "{93B9A56E-DB42-44A3-9393-FF78B11A9DFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{93B9A56E-DB42-44A3-9393-FF78B11A9DFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93B9A56E-DB42-44A3-9393-FF78B11A9DFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93B9A56E-DB42-44A3-9393-FF78B11A9DFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93B9A56E-DB42-44A3-9393-FF78B11A9DFF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
