@@ -19,13 +19,13 @@ public static class Program
         try
         {
             var (width, height) = displayService.GetResolution();
-            if (width == defaultWidth || height == defaultHeight)
+            if (width == defaultWidth && height == defaultHeight)
             {
                 displayService.SetResolution(csWidth, csHeight);
                 displayService.SetRefreshRate(deafultRefreshRate);
             }
 
-            if (width == csWidth || height == csHeight)
+            if (width == csWidth && height == csHeight)
             {
                 displayService.SetResolution(defaultWidth, defaultHeight);
                 displayService.SetRefreshRate(deafultRefreshRate);
