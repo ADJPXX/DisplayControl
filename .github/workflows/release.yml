@@ -27,7 +27,7 @@ jobs:
 
       - name: Publicar projeto
         run: |
-          dotnet publish ./DisplayControl/DisplayControl/DisplayControl.csproj `
+          dotnet publish ./DisplayControl/DisplayControl.csproj `
             -c Release `
             -r win-x64 `
             --self-contained true `
