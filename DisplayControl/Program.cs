@@ -1,4 +1,5 @@
-﻿using DisplayControl.Services;
+﻿using System.Diagnostics;
+using DisplayControl.Services;
 
 namespace DisplayControl;
 
@@ -8,8 +9,8 @@ public static class Program
     {
         var displayService = new DisplayService();
 
-        const int csWidth = 1280;
-        const int csHeight = 960;
+        const int csWidth = 3840;
+        const int csHeight = 2160;
 
         const int defaultWidth = 2560;
         const int defaultHeight = 1440;
@@ -30,6 +31,14 @@ public static class Program
                 displayService.SetResolution(defaultWidth, defaultHeight);
                 displayService.SetRefreshRate(deafultRefreshRate);
             }
+
+            var abrirSom = Process.Start(new ProcessStartInfo
+            {
+                FileName = "ms-settings:display",
+                UseShellExecute = true
+            });
+
+            abrirSom?.WaitForExit();
         }
 
         catch (Exception ex)
